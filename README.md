@@ -2,6 +2,12 @@
 
 Converting a JavaScript app to Typescript is simple. 
 
+## The app
+This document assumes that you have a working NodeJS application. It also assumes that the
+source files for the application are located in the src/ sub-directory.
+
+An example application can be found [here]
+
 ## Install the dependancies
 
 Inside your JavaScript project, install the dependencies for Typescript:
@@ -30,7 +36,6 @@ Once done, open the generated tsconfig.json file with your code editor and apply
   - Set the "outDir" attribute to the destination where to generate the transpiled files (ie: build/)
   - Set the "rootDir" attribute to the directory where your source files are stored (ie: src/)
 - Add the following attributes at the root of the file (alongside "compilerOptions")
-  - include: ["rootDir/**/*.ts"]
-    - Replace rootDir by the value set in the "rootDir" attribute
+  - include: ["src/**/*.ts"]
   - exclude: ["node_modules"]
 
